@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+	<title>registration</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
+
+<style type="text/css">
+	body{
+		
+		padding-top:100px 
+	}
+</style>
+
+</head>
+<body>
+
+
+
+	<form method="post"action="registration1" onsubmit=" return check()">
+	<div class="container" style="border: 1px solid red" align="center">
+	<h1>Registration form</h1>
+<table>
+	
+		<tr>
+			<td>First Name:</td>
+			<td><input type="text" name="name1" 
+				autofocus="name1" required></td>
+		</tr>
+		<tr>
+			<td>Last Name:</td>
+			<td><input type="text" name="lname" required >
+			</td>
+		</tr>
+		<tr>
+			<td>Email-id:</td>
+			<td>
+<input name="email" type="email" size="64" maxLength="64" 
+          placeholder="Email Address"required>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>gender</td>
+			<td><input type="radio" name="radio" value="Male">male
+				<input type="radio" name="radio" value="FeMale">female</td>
+		</tr>
+		<tr>
+			<td>Date of Birth:</td>
+			<td>
+			<input type="date" name="date1">
+			</td>>
+		</tr>
+		<tr>
+			<td>Password:</td>
+<td><input type="password" name="password" id="t1" placeholder="6-8 char"required ></td>
+		</tr>
+<tr>
+			<td>Confirm password:</td>
+			<td><input type="password" id="t2" name="cnfpassword1" placeholder="6-8 char"required ></td>
+		
+		</tr>
+
+<tr></tr>
+		<tr>
+			<td>
+				<input type="submit"  class="btn btn-success  btn-block" name="submit "value="submit" style="height: 50px ; width: 100px">	 
+			</td>
+
+
+			<td>
+				<a href="">
+				<input type="reset"class="btn btn-primary  btn-block" name="submit" value="clear" style="height: 50px;width: 100px">
+			</td>
+		</a></tr>
+		
+
+</table>
+
+</div></form>
+<script type="text/javascript">
+	function check() {
+		var a=document.getElementById('t1').value;
+				var b=document.getElementById('t2').value;
+
+				if(a==b)
+				{
+					 // alert("match");
+					return true;
+				}
+				else
+				{
+					alert(" password and confirm password not match");
+					return false;
+				}
+	}
+
+
+</script>>
+
+</body>
+</html>

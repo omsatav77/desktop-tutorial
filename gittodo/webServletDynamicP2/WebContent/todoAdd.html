@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>todoAdd</title>
+<style type="text/css">
+	#logout
+	{
+		float: right;
+		margin-top:25px;
+	}
+	
+	body{
+		
+		padding-top:100px 
+		
+	}
+
+	
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
+
+</head>
+<body >
+
+<form  action="Addtodo">
+<div class="container" style="border: 1px solid yellow">
+<a id="logout"  href="index.html"><input type="button"  class="btn btn-primary btn-lg btn-block" name="button "value="LOG OUT"></a>	 
+	 <h1>ADD NEW TODO</h1>
+	 <table>
+	 	<tr>
+	 		<td><H3>Todo Title</H3></td>
+	 	<td>
+   <input type="text" name="title1" placeholder="Add Todo title">	 
+	 	</td></tr>
+	 	<tr><td><H3>Todo Description</H3></td>
+
+<td>
+	   <input type="text" name="desc1" placeholder="Add Todo Description">		
+	 	</td></tr>
+	 	
+ 	<tr><td>
+<input type="submit" class="btn btn-primary btn-lg btn-block"name="sub"value="todoAdd">	 	
+	
+	 	</td>
+	 	<td>
+<a href="todoadd"><input type="button" class="btn btn-primary btn-lg btn-block" name="button "value="Cancel Todo"></a>	 		
+	 	</td></tr>
+	 </table>
+</div>
+</form>
+
+</body>
+</html>
